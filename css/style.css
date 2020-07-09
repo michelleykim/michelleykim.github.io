@@ -8,7 +8,7 @@ body{
 #top-navigator{
     background-color: #fff;
     overflow: hidden;
-    padding-right: 2em;
+    padding-right: 3%;
 }
 
 #nav-list a{
@@ -25,14 +25,15 @@ body{
 #main-header{
     background-color: rgb(151, 209, 217);
     padding-top: 1.4em;
-    padding-left: 6em;
+    padding-left: 8%;
+    padding-right: 8%;
     padding-bottom: 1.2em;
 }
 
 h2{
     font-size: 4.5em;
     color: #fff;
-    margin: 20px;
+    margin: 1%;
     letter-spacing: 3px;
 }
 
@@ -47,29 +48,28 @@ em{
 
 #profile-photo{
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 15%;
     display: block;
-    position: absolute;
-    left: 40%;
-    top: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -9em;
 }
 
 main{
     background-color: rgb(255, 192, 67);
-    padding-left: 4em;
+    padding-left: 5%;
     padding-bottom: 3em;
     padding-top: 4em;
-    padding-right: 4em;
+    padding-right: 5%;
 }
 
 #introduction{
     color: #fff;
     font-family: 'Bahnschrift Light';
-    padding-top: 3em;
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-bottom: 2em;
+    padding-top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3em;
 }
 
 #toggleButton{
@@ -81,22 +81,67 @@ main{
     font-size: 1.5em;
     font-family: 'Bahnschrift Light';
     border-radius: 10px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5em;
 }
 
 #toggleButton:hover{
+    cursor: pointer;
+}
+
+#toggleButton:active{
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
     border-radius: 10px;
 }
 
 #works{
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.work{
+    background-color: rgb(254, 153, 31);
+    font-family: 'Bahnschrift Light';
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.work:hover {
+    background-color: rgb(255, 139, 0);
+    border: 0.1px solid rgba(255, 255, 255, 0.4);
+  }
+
+.content {
+    padding: 0px;
+    display: none;
+    overflow: hidden;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+}
+
+p{
+    margin: 18px;
+    font-family: 'Bahnschrift Light';
 }
 
 #main-footer{
     background-color: rgb(255, 192, 67);
-    padding: 0;
+    padding: 4em;
     padding-bottom: 5em;
 }
 
@@ -115,8 +160,7 @@ main{
 	overflow: hidden;
     position: absolute;
     top: 0.5em;
-    right: 1.7em;
-    margin-left: 0.2em;
+    right: 8%;
 }
 .pushEffect span:nth-child(2){
 	animation-delay: 2.5s;
