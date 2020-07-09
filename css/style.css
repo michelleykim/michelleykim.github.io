@@ -2,11 +2,13 @@ body{
     margin: 0;
     border: 0;
     font-family: 'Bahnschrift', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 192, 67);
 }
 
 #top-navigator{
     background-color: #fff;
     overflow: hidden;
+    padding-right: 2em;
 }
 
 #nav-list a{
@@ -32,6 +34,10 @@ h2{
     color: #fff;
     margin: 20px;
     letter-spacing: 3px;
+}
+
+h3{
+    font-size: 1.5em;
 }
 
 em{
@@ -60,31 +66,38 @@ main{
 #introduction{
     color: #fff;
     font-family: 'Bahnschrift Light';
-    padding-top: 2em;
+    padding-top: 3em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 2em;
 }
 
-#dripping-image{
-    width: 100%;
-    padding: 0;
-    margin: 0;
+#toggleButton{
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 1.0);
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Bahnschrift Light';
+    border-radius: 10px;
+}
+
+#toggleButton:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+}
+
+#works{
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
 #main-footer{
-    background-color: rgb(255, 227, 171);
+    background-color: rgb(255, 192, 67);
     padding: 0;
-    padding-bottom: 5px;
-}
-
-#footer-background{
-    margin-top: -5em;
-}
-
-.background-text{
-    font-size: 3em;
-    opacity: 33.3%;
-    color: #fff;
-    letter-spacing: 5px;
-    margin-left: 1.5em;
+    padding-bottom: 5em;
 }
 
 /*Push Effect*/
@@ -102,7 +115,7 @@ main{
 	overflow: hidden;
     position: absolute;
     top: 0.5em;
-    left: 8.5em;
+    right: 1.7em;
     margin-left: 0.2em;
 }
 .pushEffect span:nth-child(2){
