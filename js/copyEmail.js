@@ -6,4 +6,5 @@ function copyEmail() {
     textarea.setSelectionRange(0, 99999);
     document.execCommand('copy');
     document.body.removeChild(textarea);
+    alert("Email copied!");
 };
