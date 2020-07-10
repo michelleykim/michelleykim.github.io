@@ -9,8 +9,8 @@
         <nav id="top-navigator">
             <div id="nav-list">
                 <a href="#main-footer"> Contact</a>
-                <a href="#works"> Project /</a>
-                <a href="#introduction">Profile /</a>
+                <a href="#introduction"> Resume /</a>
+                <a href="#works">Project /</a>
             </div>
         </nav>
 
@@ -41,7 +41,7 @@
             </div>
 
             <!--section: works-->
-            <button id="toggleButton" onclick="toggleWorks()">Projects &nabla;</button>
+            <button id="toggleButton" onclick="toggleWorks()">Projects</button>
 
             <div id="works" style="display: none;">
                 <!--Project One-->
@@ -66,14 +66,25 @@
         <!--Footer-->
         <footer id="main-footer">
 
-            <!--contact-->
-            <h5>email, etc</h5>
+            <!--Contact-->
+            <div id="contact-icons">
+                <img class="contact-icon" onclick="copyEmail()" title='Click to copy my email to your clipboard' src="images/email.png">
+                <a href="https://github.com/michelleykim?tab=repositories" target="_blank"><img class="contact-icon" title='Click to take a look at my GitHub' src="images/github.png"></a>
+                <a href="https://www.linkedin.com/in/michelle-yeojin-kim/" target="_blank"><img class="contact-icon" title='Click to take a look at my LinkedIn' src="images/linkedin.png"></a>
+            </div> 
             
+            <!--Copyright-->
+            <div id="copyright">
+                <h5>&copy; 2020 Michelle Yeojin Kim. All Rights Reserved.</h5>
+            </div>
+            
+
         </footer>
 
         <!--Scripts-->
         <script src="js/toggleWorks.js"></script>
         <script src="js/toggleWork.js"></script>
+        <script src="js/copyEmail.js"></script>
 
     </body>
 </html>

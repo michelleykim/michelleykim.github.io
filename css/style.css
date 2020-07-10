@@ -2,13 +2,15 @@ body{
     margin: 0;
     border: 0;
     font-family: 'Bahnschrift', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(255, 192, 67);
+    background-color: rgb(255, 196, 78);
 }
 
 #top-navigator{
     background-color: #fff;
     overflow: hidden;
     padding-right: 3%;
+    position: fixed;
+    width: 100%;
 }
 
 #nav-list a{
@@ -24,7 +26,7 @@ body{
 
 #main-header{
     background-color: rgb(151, 209, 217);
-    padding-top: 1.4em;
+    padding-top: 4em;
     padding-left: 8%;
     padding-right: 8%;
     padding-bottom: 1.2em;
@@ -56,9 +58,9 @@ em{
 }
 
 main{
-    background-color: rgb(255, 192, 67);
+    background-color: rgb(255, 196, 78);
     padding-left: 5%;
-    padding-bottom: 3em;
+    padding-bottom: 0;
     padding-top: 4em;
     padding-right: 5%;
 }
@@ -75,17 +77,17 @@ main{
 #toggleButton{
     border: 2px solid #fff;
     background-color: rgba(255, 255, 255, 1.0);
-    color: #000000;
-    padding: 15px;
+    color: #494949;
+    padding: 17px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: 'Bahnschrift Light';
     border-radius: 10px;
-
+    cursor: pointer;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 
 #toggleButton:hover{
@@ -101,6 +103,7 @@ main{
 #works{
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 0;
 }
 
 .work{
@@ -108,7 +111,7 @@ main{
     font-family: 'Bahnschrift Light';
     color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 20px;
     width: 80%;
     border: none;
     text-align: left;
@@ -140,9 +143,37 @@ p{
 }
 
 #main-footer{
-    background-color: rgb(255, 192, 67);
-    padding: 4em;
-    padding-bottom: 5em;
+    background-color: rgb(255, 196, 78);
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+
+#contact-icons{
+    display: inline;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.contact-icon{
+    width: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.contact-icon:hover{
+    cursor: pointer;
+}
+
+#copyright{
+    font-family: 'Bahnschrift Light';
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: center;
 }
 
 /*Push Effect*/
@@ -160,7 +191,7 @@ p{
 	overflow: hidden;
     position: absolute;
     top: 0.5em;
-    right: 8%;
+    right: 10%;
 }
 .pushEffect span:nth-child(2){
 	animation-delay: 2.5s;
