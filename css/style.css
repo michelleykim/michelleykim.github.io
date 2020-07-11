@@ -132,6 +132,7 @@ main{
     display: none;
     overflow: hidden;
     width: 80%;
+    padding-bottom: 1.5em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
@@ -141,6 +142,12 @@ main{
 p{
     margin: 18px;
     font-family: 'Bahnschrift Light';
+}
+
+.project-images{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .modal {
