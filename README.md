@@ -1,3 +1,13 @@
+# Deploy to michelleykim.github.io
+
+### `npm run deploy`
+
+Depolys whatever the state of app to [michelleykim.github.io](michelleykim.github.io). This script will automatically create a new commit on the `gh-pages` branch of the repository.
+
+Push all the current changes to main branch to keep the repository updated.
+
+Learn More: https://github.com/gitname/react-gh-pages
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
