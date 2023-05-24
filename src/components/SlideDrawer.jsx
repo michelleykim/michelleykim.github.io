@@ -8,7 +8,8 @@ const SlideDrawer = (props) => {
 	}
 	return (
 		<div className={drawerClasses}>
-			<h1>Hello, I'm sliding!</h1>
+			<h1>Whatever's in here will depend on the claw machine result</h1>
+			<h1>Users can also click the nav bar to access a page</h1>
 		</div>
 	);
 };

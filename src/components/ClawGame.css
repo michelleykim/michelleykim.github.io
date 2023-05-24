@@ -1,4 +1,30 @@
 .Game {
   /* Spacing */
   margin: 0 10vw;
+  position: relative;
+}
+
+#ClawMachine {
+  height: 80vh;
+}
+
+#ClawBody {
+  position: absolute;
+  top: 13%;
+  left: 40%;
+  height: 7vh;
+}
+
+#ClawL {
+  position: absolute;
+  top: 21%;
+  left: 42%;
+  height: 5vh;
+}
+
+#ClawR {
+  position: absolute;
+  top: 21%;
+  left: 49%;
+  height: 5vh;
 }

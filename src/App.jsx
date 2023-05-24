@@ -10,11 +10,27 @@ const App = () => {
 		<div className="App">
 			<div className="NavBar">
 				<div id="TopNav">
-					<a href="#main-footer"> Contact</a>
-					<a href="#main" target="_blank">
-						Resume /
-					</a>
-					<a href="#works">Project /</a>
+					<button
+						onClick={() => {
+							setOpen(!open);
+						}}
+					>
+						Project
+					</button>
+					<button
+						onClick={() => {
+							setOpen(!open);
+						}}
+					>
+						Resume
+					</button>
+					<button
+						onClick={() => {
+							setOpen(!open);
+						}}
+					>
+						Contact
+					</button>
 				</div>
 			</div>
 			<div
@@ -25,16 +41,9 @@ const App = () => {
 						: { justifyContent: "center" }
 				}
 			>
-				<ClawGame className="Item"></ClawGame>
+				<ClawGame id="Game"></ClawGame>
 				<SlideDrawer show={open}></SlideDrawer>
 			</div>
-			<button
-				onClick={() => {
-					setOpen(true);
-				}}
-			>
-				BUTTON
-			</button>
 		</div>
 	);
 };
