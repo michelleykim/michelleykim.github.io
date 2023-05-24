@@ -28,3 +28,24 @@
   left: 49%;
   height: 5vh;
 }
+
+#ButtonL {
+  position: absolute;
+  top: 53.5%;
+  left: 20%;
+  height: 5vh;
+}
+
+#ButtonR {
+  position: absolute;
+  top: 53.5%;
+  left: 40%;
+  height: 5vh;
+}
+
+#ButtonP {
+  position: absolute;
+  top: 53.5%;
+  left: 65%;
+  height: 5vh;
+}
