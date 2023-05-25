@@ -11,21 +11,39 @@
 #ClawBody {
   position: absolute;
   top: 13%;
-  left: 40%;
-  height: 7vh;
+  left: 43%;
+  height: 3.2vh;
+  z-index: 1;
+}
+
+#ClawHinge {
+  position: absolute;
+  top: 18.5%;
+  left: 47.5%;
+  height: 2.5vh;
+  z-index: 1;
+}
+
+#ClawRod {
+  position: absolute;
+  top: 16.3%;
+  left: 48.6%;
+  height: 2.5vh;
+  width: 1.5vh;
+  z-index: 0;
 }
 
 #ClawL {
   position: absolute;
   top: 21%;
-  left: 42%;
+  left: 44%;
   height: 5vh;
 }
 
 #ClawR {
   position: absolute;
   top: 21%;
-  left: 49%;
+  left: 51.5%;
   height: 5vh;
 }
 
