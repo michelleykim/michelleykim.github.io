@@ -16,6 +16,8 @@ const ClawGame = () => {
 	const clawRod = React.createRef();
 	const clawL = React.createRef();
 	const clawR = React.createRef();
+	const buttonL = React.createRef();
+	const buttonR = React.createRef();
 	const rate = 30;
 	const rate0 = 85;
 
@@ -28,7 +30,7 @@ const ClawGame = () => {
 	let clawHingeYPos = 0;
 	let clawYPos = 0;
 	let clawRodYPos = 0;
-	let clawRodSize = 0;
+	let clawRodSize = 1;
 
 	let rotateL = 0;
 	let rotateR = 0;
@@ -79,13 +81,16 @@ const ClawGame = () => {
 	};
 
 	const yClaw = (e) => {
+		console.log(clawL.current);
 		e.target.style.pointerEvents = "none";
+		buttonL.current.style.pointerEvents = "none";
+		buttonR.current.style.pointerEvents = "none";
 
 		// go down
 		clawHingeYPos += 700;
 		clawYPos += 350;
 		clawRodYPos += 330;
-		clawRodSize = 10;
+		clawRodSize = 12;
 		rotateL = 0.2;
 		rotateR = -0.2;
 		clawYPos -= 45;
@@ -120,6 +125,8 @@ const ClawGame = () => {
 
 			setTimeout(function () {
 				e.target.style.pointerEvents = "";
+				buttonL.current.style.pointerEvents = "";
+				buttonR.current.style.pointerEvents = "";
 			}, 2000);
 		}, 2000);
 	};
@@ -141,16 +148,22 @@ const ClawGame = () => {
 			<img id="ClawL" ref={clawL} src={ClawLImg} alt="left claw" />
 			<img id="ClawR" ref={clawR} src={ClawRImg} alt="right claw" />
 
+			<div id="prizes">
+				<span className="prize" />
+			</div>
+
 			<img
 				id="ButtonL"
 				src={ButtonLImg}
 				alt="left button"
+				ref={buttonL}
 				onClick={(e) => xClaw(e, "L")}
 			/>
 			<img
 				id="ButtonR"
 				src={ButtonRImg}
 				alt="right button"
+				ref={buttonR}
 				onClick={(e) => xClaw(e, "R")}
 			/>
 			<img
