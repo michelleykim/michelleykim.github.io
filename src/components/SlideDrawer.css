@@ -1,7 +1,6 @@
 .SideDrawer {
   height: 100vh;
   width: 55vw;
-  background-color: #ffc18e;
   position: fixed;
   right: 0;
   transform: translateX(100%);
