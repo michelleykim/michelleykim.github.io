@@ -18,8 +18,12 @@ const ClawGame = () => {
 	const clawR = React.createRef();
 	const buttonL = React.createRef();
 	const buttonR = React.createRef();
+
+	const prize1 = React.createRef();
+
 	const rate = 30;
-	const rate0 = 85;
+	const rate0 = 77;
+	const rate1 = 71.6;
 
 	let clawLXPos = 0;
 	let clawRXPos = 0;
@@ -42,30 +46,30 @@ const ClawGame = () => {
 			clawBodyXPos -= rate;
 			clawLXPos -= rate0;
 			clawRXPos -= rate0;
-			clawHingeXPos -= rate0 - 1;
-			clawRodXPos -= 140;
+			clawHingeXPos -= rate1;
+			clawRodXPos -= 115;
 		}
 		if (dir === "R") {
 			clawBodyXPos += rate;
 			clawLXPos += rate0;
 			clawRXPos += rate0;
-			clawHingeXPos += rate0;
-			clawRodXPos += 140;
+			clawHingeXPos += rate1;
+			clawRodXPos += 115;
 		}
 
-		if (clawBodyXPos < -7 * rate) {
-			clawBodyXPos = -7 * rate;
-			clawLXPos = -7 * rate0;
-			clawRXPos = -7 * rate0;
-			clawHingeXPos = -7 * rate0;
-			clawRodXPos = -7 * 140;
+		if (clawBodyXPos < -6 * rate) {
+			clawBodyXPos = -6 * rate;
+			clawLXPos = -6 * rate0;
+			clawRXPos = -6 * rate0;
+			clawHingeXPos = -6 * rate1;
+			clawRodXPos = -6 * 115;
 		}
 		if (clawBodyXPos > 6 * rate) {
-			clawBodyXPos = 7 * rate - 5;
-			clawLXPos = 7 * rate0;
-			clawRXPos = 7 * rate0;
-			clawHingeXPos = 7 * rate0 - 4;
-			clawRodXPos = 7 * 140;
+			clawBodyXPos = 6 * rate;
+			clawLXPos = 6 * rate0;
+			clawRXPos = 6 * rate0;
+			clawHingeXPos = 6 * rate1 - 4;
+			clawRodXPos = 6 * 115;
 		}
 
 		clawBody.current.style.transition = `transform 0.5s`;
@@ -81,21 +85,22 @@ const ClawGame = () => {
 	};
 
 	const yClaw = (e) => {
-		console.log(clawL.current);
 		e.target.style.pointerEvents = "none";
 		buttonL.current.style.pointerEvents = "none";
 		buttonR.current.style.pointerEvents = "none";
 
 		// go down
-		clawHingeYPos += 700;
-		clawYPos += 350;
-		clawRodYPos += 330;
-		clawRodSize = 12;
+		clawHingeYPos += 570;
+		clawYPos += 255;
+		clawRodYPos += 390;
+		clawRodSize = 11;
 		rotateL = 0.2;
 		rotateR = -0.2;
-		clawYPos -= 45;
 		clawLXPos -= 70;
 		clawRXPos += 65;
+
+		// TODO: check if ^ these numbers overlap with prize1.current.getBoundingClientRect();
+		// if so, only go down to the y position of the prize
 
 		clawHinge.current.style.transition = `transform 1s`;
 		clawL.current.style.transition = `transform 1s`;
@@ -116,9 +121,9 @@ const ClawGame = () => {
 
 		// come up
 		setTimeout(function () {
-			clawHingeYPos -= 700;
-			clawYPos -= 350;
-			clawRodYPos -= 330;
+			clawHingeYPos -= 570;
+			clawYPos -= 300;
+			clawRodYPos -= 390;
 			clawRodSize = 1;
 
 			moveClaw();
@@ -149,7 +154,7 @@ const ClawGame = () => {
 			<img id="ClawR" ref={clawR} src={ClawRImg} alt="right claw" />
 
 			<div id="prizes">
-				<span className="prize" />
+				<span className="prize" ref={prize1} />
 			</div>
 
 			<img

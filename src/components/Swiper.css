@@ -1,0 +1,12 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 80%;
+  height: 80%;
+  background-color: red;
+}

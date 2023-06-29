@@ -36,12 +36,13 @@ const App = () => {
 			<div
 				className="Content"
 				style={
-					open
-						? { justifyContent: "space-between" }
-						: { justifyContent: "center" }
+					open ? { justifyContent: "flex-start" } : { justifyContent: "center" }
 				}
 			>
-				<ClawGame id="Game"></ClawGame>
+				<ClawGame
+					id="Game"
+					style={open ? { height: "75%" } : { height: "80%" }}
+				></ClawGame>
 				<SlideDrawer show={open}></SlideDrawer>
 			</div>
 		</div>
