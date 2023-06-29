@@ -7,6 +7,10 @@
 
 .swiper {
   width: 80%;
-  height: 80%;
+  height: 100%;
+  margin-right: 15%;
+}
+
+.slide {
   background-color: red;
 }

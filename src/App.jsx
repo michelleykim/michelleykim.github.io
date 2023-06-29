@@ -39,10 +39,10 @@ const App = () => {
 					open ? { justifyContent: "flex-start" } : { justifyContent: "center" }
 				}
 			>
-				<ClawGame
-					id="Game"
-					style={open ? { height: "75%" } : { height: "80%" }}
-				></ClawGame>
+				<div style={open ? { height: "60%" } : { height: "80%" }}>
+					<ClawGame></ClawGame>
+				</div>
+
 				<SlideDrawer show={open}></SlideDrawer>
 			</div>
 		</div>

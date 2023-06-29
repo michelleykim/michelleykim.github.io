@@ -9,21 +9,23 @@ const Projects = () => {
 		<div className="carousel">
 			<Swiper
 				direction={"vertical"}
+				loop={true}
+				mousewheel={true}
+				spaceBetween={30}
+				slidesPerView={1.8}
+				centeredSlides={true}
 				pagination={{
+					el: ".swiper-pagination",
 					clickable: true,
 				}}
 				modules={[Pagination]}
-				className="mySwiper"
+				className="swiper"
 			>
-				<SwiperSlide>Slide 1</SwiperSlide>
-				<SwiperSlide>Slide 2</SwiperSlide>
-				<SwiperSlide>Slide 3</SwiperSlide>
-				<SwiperSlide>Slide 4</SwiperSlide>
-				<SwiperSlide>Slide 5</SwiperSlide>
-				<SwiperSlide>Slide 6</SwiperSlide>
-				<SwiperSlide>Slide 7</SwiperSlide>
-				<SwiperSlide>Slide 8</SwiperSlide>
-				<SwiperSlide>Slide 9</SwiperSlide>
+				<SwiperSlide className="slide">Slide 1</SwiperSlide>
+				<SwiperSlide className="slide">Slide 2</SwiperSlide>
+				<SwiperSlide className="slide">Slide 3</SwiperSlide>
+				<SwiperSlide className="slide">Slide 4</SwiperSlide>
+				<SwiperSlide className="slide">Slide 5</SwiperSlide>
 			</Swiper>
 		</div>
 	);
