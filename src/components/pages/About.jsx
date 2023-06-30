@@ -21,7 +21,9 @@ const About = () => {
 				className="swiper"
 			>
 				<SwiperSlide className="slide">
-					<div className="slideContent">Slide a</div>
+					<div className="slideContent">
+						<p>Welcome to my corner of the internet!</p>
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
 					<div className="slideContent">Slide b</div>
