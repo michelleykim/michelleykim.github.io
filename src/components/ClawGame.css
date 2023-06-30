@@ -89,3 +89,9 @@
   left: 65%;
   height: 6%;
 }
+
+#copyrightText {
+  text-align: right;
+  font-size: 12px;
+  margin-right: 10px;
+}

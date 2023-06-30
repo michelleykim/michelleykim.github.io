@@ -45,9 +45,6 @@ const App = () => {
 
 				<SlideDrawer show={open}></SlideDrawer>
 			</div>
-			<p style={{ alignSelf: "flex-start", padding: "5px" }}>
-				© 2023. All rights reserved.
-			</p>
 		</div>
 	);
 };

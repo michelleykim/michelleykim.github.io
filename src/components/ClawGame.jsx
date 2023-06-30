@@ -177,6 +177,7 @@ const ClawGame = () => {
 				alt="play button"
 				onClick={(e) => yClaw(e)}
 			/>
+			<p id="copyrightText">© 2023. All rights reserved.</p>
 		</div>
 	);
 };
