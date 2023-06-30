@@ -4,18 +4,18 @@ import ClawGame from "./components/ClawGame";
 import SlideDrawer from "./components/SlideDrawer";
 import Tassel from "./assets/tassel.svg";
 import { useDispatch, useSelector } from "react-redux";
-import { setSidePannel } from "./redux/actions";
+import { setSidePannel, setNightmode } from "./redux/actions";
 
 const App = () => {
-	const state = useSelector((state) => state);
+	const state = useSelector((state) => state.state);
 	const dispatch = useDispatch();
 
 	const [open, setOpen] = useState(false);
 	const [showResume, setShowResume] = useState(false);
-	const [darkmode, setDarkmode] = useState(false);
+	const [darkmode, setDarkmode] = useState(state.isNightmode);
 
 	return (
-		<div className="App">
+		<div className={`App ${darkmode ? "nightMode" : "dayMode"}`}>
 			<div className="NavBar">
 				<div id="TopNav">
 					<img
@@ -23,10 +23,12 @@ const App = () => {
 						src={Tassel}
 						alt="light switch"
 						onClick={() => {
+							dispatch(setNightmode(!darkmode));
 							setDarkmode(!darkmode);
 						}}
 					/>
 					<button
+						style={darkmode ? { color: "#E1DBFF" } : { color: "black" }}
 						onClick={() => {
 							setOpen(false);
 						}}
@@ -34,6 +36,7 @@ const App = () => {
 						home
 					</button>
 					<button
+						style={darkmode ? { color: "#E1DBFF" } : { color: "black" }}
 						onClick={() => {
 							dispatch(setSidePannel("about"));
 							setOpen(true);
@@ -42,6 +45,7 @@ const App = () => {
 						about
 					</button>
 					<button
+						style={darkmode ? { color: "#E1DBFF" } : { color: "black" }}
 						onClick={() => {
 							dispatch(setSidePannel("project"));
 							setOpen(true);
@@ -50,6 +54,7 @@ const App = () => {
 						project
 					</button>
 					<button
+						style={darkmode ? { color: "#E1DBFF" } : { color: "black" }}
 						onClick={() => {
 							setShowResume(!showResume);
 						}}

@@ -1,4 +1,4 @@
-import { SET_SIDE_PANNEL } from "../constants";
+import { SET_NIGHT_MODE, SET_SIDE_PANNEL, SET_PLAYING } from "../constants";
 
 const initialState = {
 	isPlaying: false,
@@ -9,10 +9,11 @@ const initialState = {
 const state = (state = initialState, action) => {
 	switch (action.type) {
 		case SET_SIDE_PANNEL:
-			console.log({ ...state, sidePannel: action.payload });
 			return { ...state, sidePannel: action.payload };
-		case "ACTION2":
-			return initialState;
+		case SET_NIGHT_MODE:
+			return { ...state, isNightmode: action.payload };
+		case SET_PLAYING:
+			return { ...state, isPlaying: action.payload };
 		default:
 			return state;
 	}

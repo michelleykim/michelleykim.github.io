@@ -9,8 +9,11 @@ import ClawRImg from "../assets/clawR.svg";
 import ButtonLImg from "../assets/buttonL.svg";
 import ButtonRImg from "../assets/buttonR.svg";
 import ButtonPImg from "../assets/buttonP.svg";
+import { useSelector } from "react-redux";
 
 const ClawGame = () => {
+	const state = useSelector((state) => state.state);
+
 	const clawBody = React.createRef();
 	const clawHinge = React.createRef();
 	const clawRod = React.createRef();
@@ -177,7 +180,12 @@ const ClawGame = () => {
 				alt="play button"
 				onClick={(e) => yClaw(e)}
 			/>
-			<p id="copyrightText">© 2023. All rights reserved.</p>
+			<p
+				id="copyrightText"
+				style={state.isNightmode ? { color: "#E1DBFF" } : { color: "black" }}
+			>
+				© 2023. All rights reserved.
+			</p>
 		</div>
 	);
 };
