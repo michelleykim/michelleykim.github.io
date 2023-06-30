@@ -29,6 +29,10 @@
   align-self: center;
 }
 
+.swiper-pagination-bullet {
+  background-color: #d7d7d7;
+}
+
 .swiper-pagination-bullet-active {
   background-color: #E1DBFF;
 }
