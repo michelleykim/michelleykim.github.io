@@ -3,6 +3,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
+  z-index: 3;
 }
 
 .swiper {
@@ -12,5 +13,22 @@
 }
 
 .slide {
-  background-color: #ffc18e;
+  background-color: rgba(0, 0, 0, 0.20);
+  border-radius: 20px;
+}
+
+.slideContent {
+  margin: 5px;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  width: 90%;
+  background-color: rgba(0, 0, 0);
+  opacity: 0.05;
+  align-self: center;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4C0EB1;
 }

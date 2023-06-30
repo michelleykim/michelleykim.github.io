@@ -1,6 +1,7 @@
 import React from "react";
 import "./SlideDrawer.css";
-import Projects from "./Projects";
+import Projects from "./pages/Projects";
+import About from "./pages/About";
 
 const SlideDrawer = (props) => {
 	let drawerClasses = "SideDrawer";
