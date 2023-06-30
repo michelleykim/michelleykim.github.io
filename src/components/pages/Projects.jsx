@@ -7,7 +7,7 @@ import "../Swiper.css";
 
 const Projects = () => {
 	return (
-		<div className="carousel">
+		<div id="projects" className="carousel">
 			<Swiper
 				direction={"vertical"}
 				loop={true}

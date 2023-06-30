@@ -3,8 +3,13 @@ import "./App.css";
 import ClawGame from "./components/ClawGame";
 import SlideDrawer from "./components/SlideDrawer";
 import Tassel from "./assets/tassel.svg";
+import { useDispatch, useSelector } from "react-redux";
+import { setSidePannel } from "./redux/actions";
 
 const App = () => {
+	const state = useSelector((state) => state);
+	const dispatch = useDispatch();
+
 	const [open, setOpen] = useState(false);
 	const [showResume, setShowResume] = useState(false);
 	const [darkmode, setDarkmode] = useState(false);
@@ -23,14 +28,23 @@ const App = () => {
 					/>
 					<button
 						onClick={() => {
-							setOpen(!open);
+							setOpen(false);
+						}}
+					>
+						home
+					</button>
+					<button
+						onClick={() => {
+							dispatch(setSidePannel("about"));
+							setOpen(true);
 						}}
 					>
 						about
 					</button>
 					<button
 						onClick={() => {
-							setOpen(!open);
+							dispatch(setSidePannel("project"));
+							setOpen(true);
 						}}
 					>
 						project
@@ -41,13 +55,6 @@ const App = () => {
 						}}
 					>
 						resume
-					</button>
-					<button
-						onClick={() => {
-							setOpen(!open);
-						}}
-					>
-						contact
 					</button>
 				</div>
 			</div>
