@@ -135,6 +135,8 @@ const ClawGame = () => {
 				e.target.style.pointerEvents = "";
 				buttonL.current.style.pointerEvents = "";
 				buttonR.current.style.pointerEvents = "";
+
+				prize1.current.remove();
 			}, 2000);
 		}, 2000);
 	};
@@ -145,6 +147,28 @@ const ClawGame = () => {
 		clawHinge.current.style.transform = `translate(${clawHingeXPos}%, ${clawHingeYPos}%)`;
 		clawL.current.style.transform = `translate(${clawLXPos}%, ${clawYPos}%) rotate(${rotateL}turn)`;
 		clawR.current.style.transform = `translate(${clawRXPos}%, ${clawYPos}%) rotate(${rotateR}turn)`;
+
+		if (checkCollision()) {
+			prize1.current.style.transition = `transform 1s 1s`;
+			prize1.current.style.transform = `translateY(-250%)`;
+		}
+	};
+
+	const checkCollision = () => {
+		let prizeX = prize1.current.getBoundingClientRect().x;
+		let prizeY = prize1.current.getBoundingClientRect().y;
+		let hingeX = clawHinge.current.getBoundingClientRect().x;
+		let hingeY = clawHinge.current.getBoundingClientRect().y;
+
+		if (Math.abs(prizeX - hingeX) <= 15 && Math.abs(prizeY - hingeY) <= 22) {
+			return true;
+		}
+
+		return false;
+
+		// works for checking top offset
+		//console.log(prize1.current.offsetTop);
+		//console.log(clawHinge.current.offsetTop);
 	};
 
 	return (
