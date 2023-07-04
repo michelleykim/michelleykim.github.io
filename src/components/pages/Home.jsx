@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import ClawGame from "../ClawGame";
 import SlideDrawer from "../SlideDrawer";
@@ -9,6 +10,7 @@ import { setSidePannel, setNightmode } from "../../redux/actions";
 const Home = () => {
 	const state = useSelector((state) => state.state);
 	const dispatch = useDispatch();
+	const navigate = useNavigate();
 
 	const [open, setOpen] = useState(false);
 	const [showResume, setShowResume] = useState(false);
@@ -31,6 +33,7 @@ const Home = () => {
 						style={darkmode ? { color: "#E1DBFF" } : { color: "black" }}
 						onClick={() => {
 							setOpen(false);
+							navigate("/");
 						}}
 					>
 						home
@@ -40,6 +43,7 @@ const Home = () => {
 						onClick={() => {
 							dispatch(setSidePannel("about"));
 							setOpen(true);
+							navigate("/about");
 						}}
 					>
 						about
@@ -49,6 +53,7 @@ const Home = () => {
 						onClick={() => {
 							dispatch(setSidePannel("project"));
 							setOpen(true);
+							navigate("/project");
 						}}
 					>
 						project
