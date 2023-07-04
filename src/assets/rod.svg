@@ -1,7 +1,7 @@
 <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-inside-1_2_65" fill="white">
-<path d="M0 1.52588e-05H12V16H0V1.52588e-05Z"/>
+<mask id="path-1-inside-1_144_80" fill="white">
+<path d="M0 0H12V16H0V0Z"/>
 </mask>
-<path d="M0 1.52588e-05H12V16H0V1.52588e-05Z" fill="#B6B5B9"/>
-<path d="M8 1.52588e-05V16H16V1.52588e-05H8ZM4 16V1.52588e-05H-4V16H4Z" fill="black" mask="url(#path-1-inside-1_2_65)"/>
+<path d="M0 0H12V16H0V0Z" fill="#B6B5B9"/>
+<path d="M8 0V16H16V0H8ZM4 16V0H-4V16H4Z" fill="#505050" mask="url(#path-1-inside-1_144_80)"/>
 </svg>

@@ -4,6 +4,7 @@ import { Mousewheel, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../Swiper.css";
+import "./Projects.css";
 
 const Projects = () => {
 	return (
@@ -22,19 +23,25 @@ const Projects = () => {
 				className="swiper"
 			>
 				<SwiperSlide className="slide">
-					<div className="slideContent">Slide 1</div>
+					<div className="slideContent project">michelleykim.github.io</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent">Slide 2</div>
+					<div className="slideContent project">Sketch-Connect</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent">Slide 3</div>
+					<div className="slideContent project">BlueNav</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent">Slide 4</div>
+					<div className="slideContent project">Ledge-it</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent">Slide 5</div>
+					<div className="slideContent project">Star Farm</div>
+				</SwiperSlide>
+				<SwiperSlide className="slide">
+					<div className="slideContent project">Happy Hour</div>
+				</SwiperSlide>
+				<SwiperSlide className="slide">
+					<div className="slideContent project">Spellrise</div>
 				</SwiperSlide>
 			</Swiper>
 		</div>

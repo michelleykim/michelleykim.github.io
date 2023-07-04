@@ -60,13 +60,9 @@
 
 .prize {
   position: absolute;
-  top: 70%;
-  left: 8%;
-  width: 14%;
-  height: 25%;
-  background-color: red;
-  border: 4px solid black;
-  border-radius: 50%;
+  top: 60%;
+  left: 3%;
+  width: 30%;
   display: inline;
 }
 

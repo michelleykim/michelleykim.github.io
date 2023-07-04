@@ -9,6 +9,7 @@ import ClawRImg from "../assets/clawR.svg";
 import ButtonLImg from "../assets/buttonL.svg";
 import ButtonRImg from "../assets/buttonR.svg";
 import ButtonPImg from "../assets/buttonP.svg";
+import BearImg from "../assets/teddybear.svg";
 import { useSelector } from "react-redux";
 
 const ClawGame = () => {
@@ -150,7 +151,7 @@ const ClawGame = () => {
 
 		if (checkCollision()) {
 			prize1.current.style.transition = `transform 1s 1s`;
-			prize1.current.style.transform = `translateY(-250%)`;
+			prize1.current.style.transform = `translateY(-200%)`;
 		}
 	};
 
@@ -160,7 +161,10 @@ const ClawGame = () => {
 		let hingeX = clawHinge.current.getBoundingClientRect().x;
 		let hingeY = clawHinge.current.getBoundingClientRect().y;
 
-		if (Math.abs(prizeX - hingeX) <= 15 && Math.abs(prizeY - hingeY) <= 22) {
+		console.log(prize1.current.getBoundingClientRect());
+		console.log(clawHinge.current.getBoundingClientRect());
+
+		if (Math.abs(prizeX - hingeX) <= 20 && Math.abs(prizeY - hingeY) <= 22) {
 			return true;
 		}
 
@@ -181,7 +185,12 @@ const ClawGame = () => {
 			<img id="ClawR" ref={clawR} src={ClawRImg} alt="right claw" />
 
 			<div id="prizes">
-				<span className="prize" ref={prize1} />
+				<img
+					className="prize"
+					ref={prize1}
+					src={BearImg}
+					alt="teddy bear"
+				></img>
 			</div>
 
 			<img
