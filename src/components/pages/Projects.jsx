@@ -23,25 +23,46 @@ const Projects = () => {
 				className="swiper"
 			>
 				<SwiperSlide className="slide">
-					<div className="slideContent project">michelleykim.github.io</div>
+					<div className="slideContent project">
+						<p>michelleykim.github.io</p>
+						<p>a portfolio website designed and created entirely by myself</p>
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent project">Sketch-Connect</div>
+					<div className="slideContent project">
+						<p>Sketch-Connect</p>
+						<p>collaborate with friends to make an artwork together</p>
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent project">BlueNav</div>
+					<div className="slideContent project">
+						<p>BlueNav</p>
+						<p>making navigating degree requirements easy for UBC students</p>
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent project">Ledge-it</div>
+					<div className="slideContent project">
+						<p>Ledge-it</p>
+						<p>making managing finance easy for university students</p>
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent project">Star Farm</div>
+					<div className="slideContent project">
+						<p>Happy Hour</p>
+						<p>making organizing group events easy with google calendar sync</p>
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent project">Happy Hour</div>
+					<div className="slideContent project">
+						<p>Spellrise</p>
+						<p>become a powerful magician in search of lost memories</p>
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent project">Spellrise</div>
+					<div className="slideContent project">
+						<p>Star Farm</p>
+						<p>a pixel art, resource management adventure for everyone</p>
+					</div>
 				</SwiperSlide>
 			</Swiper>
 		</div>

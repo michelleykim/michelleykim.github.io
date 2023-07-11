@@ -2,9 +2,15 @@
   height: 100vh;
   width: 55vw;
   position: fixed;
-  right: 0;
-  transform: translateX(100%);
+  right: 5vw;
+  transform: translateX(110%);
   transition: transform 0.3s ease-out;
+}
+
+@media only screen and (max-width: 800px) {
+  .SideDrawer {
+    width: 80vw;
+  }
 }
 
 .SideDrawer.Open {

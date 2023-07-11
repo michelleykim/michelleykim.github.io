@@ -23,13 +23,29 @@ const About = () => {
 				<SwiperSlide className="slide">
 					<div className="slideContent">
 						<p>Welcome to my corner of the internet!</p>
+						<p>
+							I am a student at the University of British Columbia pursuing
+							bachelor in Computer Science and masters in Business Management.
+						</p>
+						<p>I love to design and node for people.</p>
 					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent">Slide b</div>
+					<div className="slideContent">
+						<p>When I'm not coding,</p>
+						<p>
+							I'm excercising, organizing hackathons, learning languages, or
+							making music.
+						</p>
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent">Slide c</div>
+					<div className="slideContent">
+						<p>Let's connect!</p>
+						<p>email</p>
+						<p>github</p>
+						<p>linkedin</p>
+					</div>
 				</SwiperSlide>
 			</Swiper>
 		</div>

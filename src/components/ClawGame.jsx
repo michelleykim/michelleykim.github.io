@@ -166,9 +166,9 @@ const ClawGame = () => {
 
 		if (Math.abs(prizeX - hingeX) <= 20 && Math.abs(prizeY - hingeY) <= 22) {
 			return true;
+		} else {
+			return false;
 		}
-
-		return false;
 
 		// works for checking top offset
 		//console.log(prize1.current.offsetTop);
