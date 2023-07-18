@@ -1,3 +1,42 @@
 .project {
   display: flex;
+  flex-direction: column;
+  padding: 32px;
+  width: 88%;
+  height: 84%;
+  justify-content: center;
+}
+
+.title {
+  font-size: 32px;
+  padding-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: space-between;
+}
+
+.chips {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+  width: 45%;
+}
+
+.project-image {
+  width: 55%;
+}
+
+@media only screen and (max-width: 800px) {
+  .project {}
 }
