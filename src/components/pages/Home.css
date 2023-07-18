@@ -116,6 +116,12 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 800px) {
+  .Content {
+    justify-content: center !important;
+  }
+}
+
 #resume {
   position: absolute;
   width: 90%;
