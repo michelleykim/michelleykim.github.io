@@ -40,8 +40,7 @@ const Projects = () => {
 							<div className="chips">
 								<Chip text="HTML" />
 								<Chip text="CSS" />
-								<Chip text="JavaScript" />
-								<Chip text="React" />
+								<Chip text="React.js" />
 								<Chip text="Redux" />
 							</div>
 							<img
@@ -62,12 +61,11 @@ const Projects = () => {
 							<div className="chips">
 								<Chip text="HTML" />
 								<Chip text="CSS" />
-								<Chip text="JavaScript" />
-								<Chip text="React" />
+								<Chip text="React.js" />
 								<Chip text="Redux" />
 								<Chip text="Express" />
 								<Chip text="MongoDB" />
-								<Chip text="Node" />
+								<Chip text="Node.js" />
 							</div>
 							<img
 								className="project-image"
@@ -87,8 +85,7 @@ const Projects = () => {
 							<div className="chips">
 								<Chip text="HTML" />
 								<Chip text="CSS" />
-								<Chip text="JavaScript" />
-								<Chip text="React" />
+								<Chip text="React.js" />
 								<Chip text="Redux" />
 								<Chip text="Golang" />
 							</div>
@@ -109,8 +106,7 @@ const Projects = () => {
 							<div className="chips">
 								<Chip text="HTML" />
 								<Chip text="CSS" />
-								<Chip text="JavaScript" />
-								<Chip text="ReactNative" />
+								<Chip text="React Native" />
 							</div>
 							<video className="project-image" controls>
 								<source src={ledgeit} type="video/mp4" />
@@ -129,8 +125,7 @@ const Projects = () => {
 							<div className="chips">
 								<Chip text="HTML" />
 								<Chip text="CSS" />
-								<Chip text="JavaScript" />
-								<Chip text="Vue" />
+								<Chip text="Vue.js" />
 							</div>
 							<img
 								className="project-image"
