@@ -1,0 +1,49 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  width: 88%;
+  height: 84%;
+  justify-content: center;
+}
+
+.title {
+  font-size: 32px;
+  padding-bottom: 24px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 20px;
+  padding-bottom: 18px;
+  line-height: 1.2;
+}
+
+a {
+  display: contents;
+  text-decoration: none;
+  font-size: 36px;
+  color: inherit;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 85%;
+    height: 84%;
+    justify-content: center;
+  }
+
+  .title {
+    word-wrap: break-word;
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+}

@@ -4,10 +4,11 @@ import { Mousewheel, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../Swiper.css";
+import "./About.css";
 
 const About = () => {
 	return (
-		<div id="about" className="carousel">
+		<div id="abouts" className="carousel">
 			<Swiper
 				direction={"vertical"}
 				mousewheel={true}
@@ -21,30 +22,44 @@ const About = () => {
 				className="swiper"
 			>
 				<SwiperSlide className="slide">
-					<div className="slideContent">
-						<p>Welcome to my corner of the internet!</p>
-						<p>
+					<div className="slideContent about">
+						<p className="title">Hi, I'm Michelle!👋</p>
+						<p className="subtitle">
 							I am a student at the University of British Columbia pursuing
-							bachelor in Computer Science and masters in Business Management.
+							<b>
+								bachelor in Computer Science and masters in Business Management
+							</b>
+							dual degree program.
 						</p>
-						<p>I love to design and node for people.</p>
+						<p
+							className="subtitle"
+							style={{ fontSize: "24px", fontStyle: "italic" }}
+						>
+							<i>I design and code for people.</i>
+						</p>
+						<p className="subtitle">
+							Let's connect!{" "}
+							<a href="mailto:yeojin011016@gmail.com?subject=Me&body=Sent from michelleykim.github.io!">
+								✉️
+							</a>
+						</p>
 					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent">
-						<p>When I'm not coding,</p>
-						<p>
+					<div className="slideContent about">
+						<p className="title">When I'm not coding,</p>
+						<p className="subtitle">
 							I'm excercising, organizing hackathons, learning languages, or
 							making music.
 						</p>
 					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
-					<div className="slideContent">
-						<p>Let's connect!</p>
-						<p>email</p>
-						<p>github</p>
-						<p>linkedin</p>
+					<div className="slideContent about">
+						<p className="title">Let's connect!</p>
+						<p className="subtitle">email</p>
+						<p className="subtitle">github</p>
+						<p className="subtitle">linkedin</p>
 					</div>
 				</SwiperSlide>
 			</Swiper>
