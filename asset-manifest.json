@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.992d172a.css",
-    "main.js": "/static/js/main.1eac2de7.js",
+    "main.css": "/static/css/main.850f1d98.css",
+    "main.js": "/static/js/main.860d4ff9.js",
     "static/js/787.7de581aa.chunk.js": "/static/js/787.7de581aa.chunk.js",
     "static/media/backgroundUniverseDark.svg": "/static/media/backgroundUniverseDark.4d9d08d2f3d3a530ee2f.svg",
     "static/media/tassel.svg": "/static/media/tassel.74f5ecdecb7e7682682401165058f54f.svg",
@@ -26,12 +26,12 @@
     "static/media/rod.svg": "/static/media/rod.f4a2a0c52332a63d59b08a4917a49ad6.svg",
     "static/media/body.svg": "/static/media/body.f958586c6f3b4ac159613783cfe7953b.svg",
     "static/media/hinge.svg": "/static/media/hinge.e68234db2753e10b4031d722f89c9b8c.svg",
-    "main.992d172a.css.map": "/static/css/main.992d172a.css.map",
-    "main.1eac2de7.js.map": "/static/js/main.1eac2de7.js.map",
+    "main.850f1d98.css.map": "/static/css/main.850f1d98.css.map",
+    "main.860d4ff9.js.map": "/static/js/main.860d4ff9.js.map",
     "787.7de581aa.chunk.js.map": "/static/js/787.7de581aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.992d172a.css",
-    "static/js/main.1eac2de7.js"
+    "static/css/main.850f1d98.css",
+    "static/js/main.860d4ff9.js"
   ]
 }
