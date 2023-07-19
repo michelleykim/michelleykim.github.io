@@ -38,8 +38,7 @@ const Projects = () => {
 						</p>
 						<div className="detail">
 							<div className="chips">
-								<Chip text="HTML" />
-								<Chip text="CSS" />
+								<Chip text="HTML/CSS" />
 								<Chip text="React.js" />
 								<Chip text="Redux" />
 							</div>
@@ -59,8 +58,7 @@ const Projects = () => {
 						</p>
 						<div className="detail">
 							<div className="chips">
-								<Chip text="HTML" />
-								<Chip text="CSS" />
+								<Chip text="HTML/CSS" />
 								<Chip text="React.js" />
 								<Chip text="Redux" />
 								<Chip text="Express" />
@@ -83,8 +81,7 @@ const Projects = () => {
 						</p>
 						<div className="detail">
 							<div className="chips">
-								<Chip text="HTML" />
-								<Chip text="CSS" />
+								<Chip text="HTML/CSS" />
 								<Chip text="React.js" />
 								<Chip text="Redux" />
 								<Chip text="Golang" />
@@ -104,8 +101,7 @@ const Projects = () => {
 						</p>
 						<div className="detail">
 							<div className="chips">
-								<Chip text="HTML" />
-								<Chip text="CSS" />
+								<Chip text="HTML/CSS" />
 								<Chip text="React Native" />
 							</div>
 							<video className="project-image" controls>
@@ -123,8 +119,7 @@ const Projects = () => {
 						</p>
 						<div className="detail">
 							<div className="chips">
-								<Chip text="HTML" />
-								<Chip text="CSS" />
+								<Chip text="HTML/CSS" />
 								<Chip text="Vue.js" />
 							</div>
 							<img
@@ -163,7 +158,7 @@ const Projects = () => {
 						<div className="detail">
 							<div className="chips">
 								<Chip text="C++" />
-								<Chip text="Unity++" />
+								<Chip text="Unity" />
 							</div>
 							<img
 								className="project-image"

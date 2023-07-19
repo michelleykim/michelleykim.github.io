@@ -37,30 +37,31 @@ const About = () => {
 						>
 							<i>I design and code for people.</i>
 						</p>
-						<p className="subtitle">
-							Let's connect!{" "}
-							<a href="mailto:yeojin011016@gmail.com?subject=Me&body=Sent from michelleykim.github.io!">
-								✉️
-							</a>
-						</p>
 					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
 					<div className="slideContent about">
 						<p className="title">When I'm not coding,</p>
-						<p className="subtitle">
-							I'm excercising, organizing hackathons, learning languages, or
-							making music.
-						</p>
+						<p className="subtitle">🥋 I'm excercising</p>
+						<p className="subtitle">📅 I'm planning hackathons</p>
+						<p className="subtitle">🌏 I'm learning languages</p>
+						<p className="subtitle">🎵 I'm making music</p>
 					</div>
 				</SwiperSlide>
 				<SwiperSlide className="slide">
 					<div className="slideContent about">
 						<p className="title">Let's connect!</p>
-						<p className="subtitle">email</p>
-						<p className="subtitle">github</p>
-						<p className="subtitle">linkedin</p>
-						<p className="subtitle">... or try playing a claw machine game👀</p>
+						<a href="mailto:yeojin011016@gmail.com?subject=Me&body=Sent from michelleykim.github.io!">
+							📌 email
+						</a>
+						<a href="https://github.com/michelleykim">📌 GitHub</a>
+						<a href="https://www.linkedin.com/in/michelle-yeojin-kim/">
+							📌 LinkedIn
+						</a>
+						<p className="subtitle">
+							<br />
+							... or play some claw machine games 👀
+						</p>
 					</div>
 				</SwiperSlide>
 			</Swiper>
