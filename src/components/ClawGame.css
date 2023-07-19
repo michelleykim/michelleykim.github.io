@@ -60,10 +60,24 @@
 
 .prize {
   position: absolute;
-  top: 60%;
-  left: 3%;
-  width: 30%;
+  top: 66%;
+  width: 18%;
   display: inline;
+}
+
+#email {
+  left: 41%;
+  transform: rotate(24deg);
+}
+
+#github {
+  left: 29%;
+  transform: rotate(139deg);
+}
+
+#linkedin {
+  left: 75%;
+  transform: rotate(93deg);
 }
 
 /* ----- BUTTONS ----- */

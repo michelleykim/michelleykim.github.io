@@ -25,10 +25,10 @@ const About = () => {
 					<div className="slideContent about">
 						<p className="title">Hi, I'm Michelle!👋</p>
 						<p className="subtitle">
-							I am a student at the University of British Columbia pursuing
-							<b>
+							I am a student at the University of British Columbia pursuing{" "}
+							<b style={{ fontWeight: "bold" }}>
 								bachelor in Computer Science and masters in Business Management
-							</b>
+							</b>{" "}
 							dual degree program.
 						</p>
 						<p
@@ -60,6 +60,7 @@ const About = () => {
 						<p className="subtitle">email</p>
 						<p className="subtitle">github</p>
 						<p className="subtitle">linkedin</p>
+						<p className="subtitle">... or try playing a claw machine game👀</p>
 					</div>
 				</SwiperSlide>
 			</Swiper>

@@ -9,7 +9,9 @@ import ClawRImg from "../assets/clawR.svg";
 import ButtonLImg from "../assets/buttonL.svg";
 import ButtonRImg from "../assets/buttonR.svg";
 import ButtonPImg from "../assets/buttonP.svg";
-import BearImg from "../assets/teddybear.svg";
+import EmailBall from "../assets/socials/email.svg";
+import GithubBall from "../assets/socials/github.svg";
+import LinkedinBall from "../assets/socials/linkedin.svg";
 import { useSelector } from "react-redux";
 
 const ClawGame = () => {
@@ -23,7 +25,9 @@ const ClawGame = () => {
 	const buttonL = React.createRef();
 	const buttonR = React.createRef();
 
-	const prize1 = React.createRef();
+	const email = React.createRef();
+	const github = React.createRef();
+	const linkedin = React.createRef();
 
 	const rate = 30;
 	const rate0 = 77;
@@ -94,17 +98,14 @@ const ClawGame = () => {
 		buttonR.current.style.pointerEvents = "none";
 
 		// go down
-		clawHingeYPos += 570;
-		clawYPos += 255;
+		clawHingeYPos += 530;
+		clawYPos += 235;
 		clawRodYPos += 390;
-		clawRodSize = 11;
+		clawRodSize = 9;
 		rotateL = 0.2;
 		rotateR = -0.2;
 		clawLXPos -= 70;
 		clawRXPos += 65;
-
-		// TODO: check if ^ these numbers overlap with prize1.current.getBoundingClientRect();
-		// if so, only go down to the y position of the prize
 
 		clawHinge.current.style.transition = `transform 1s`;
 		clawL.current.style.transition = `transform 1s`;
@@ -125,8 +126,8 @@ const ClawGame = () => {
 
 		// come up
 		setTimeout(function () {
-			clawHingeYPos -= 570;
-			clawYPos -= 300;
+			clawHingeYPos -= 530;
+			clawYPos -= 280;
 			clawRodYPos -= 390;
 			clawRodSize = 1;
 
@@ -136,8 +137,6 @@ const ClawGame = () => {
 				e.target.style.pointerEvents = "";
 				buttonL.current.style.pointerEvents = "";
 				buttonR.current.style.pointerEvents = "";
-
-				prize1.current.remove();
 			}, 2000);
 		}, 2000);
 	};
@@ -149,30 +148,76 @@ const ClawGame = () => {
 		clawL.current.style.transform = `translate(${clawLXPos}%, ${clawYPos}%) rotate(${rotateL}turn)`;
 		clawR.current.style.transform = `translate(${clawRXPos}%, ${clawYPos}%) rotate(${rotateR}turn)`;
 
-		if (checkCollision()) {
-			prize1.current.style.transition = `transform 1s 1s`;
-			prize1.current.style.transform = `translateY(-200%)`;
+		switch (checkCollision()) {
+			case "email":
+				email.current.style.transition = `transform 1s 1s`;
+				email.current.style.transform = `translateY(-210%)`;
+				setTimeout(function () {
+					email.current.remove();
+					window.location =
+						"mailto:yeojin011016@gmail.com?subject=Me&body=Sent from michelleykim.github.io!";
+				}, 2000);
+				break;
+			case "github":
+				github.current.style.transition = `transform 1s 1s`;
+				github.current.style.transform = `translateY(-210%)`;
+				setTimeout(function () {
+					github.current.remove();
+					window.open("https://github.com/michelleykim", "_blank");
+				}, 2000);
+				break;
+			case "linkedin":
+				linkedin.current.style.transition = `transform 1s 1s`;
+				linkedin.current.style.transform = `translateY(-210%)`;
+				setTimeout(function () {
+					linkedin.current.remove();
+					window.open(
+						"https://www.linkedin.com/in/michelle-yeojin-kim/",
+						"_blank"
+					);
+				}, 2000);
+				break;
+			default:
+			//console.log("no collision");
 		}
 	};
 
 	const checkCollision = () => {
-		let prizeX = prize1.current.getBoundingClientRect().x;
-		let prizeY = prize1.current.getBoundingClientRect().y;
-		let hingeX = clawHinge.current.getBoundingClientRect().x;
+		let hingeX =
+			clawHinge.current.getBoundingClientRect().x +
+			clawHinge.current.getBoundingClientRect().width / 2;
 		let hingeY = clawHinge.current.getBoundingClientRect().y;
 
-		console.log(prize1.current.getBoundingClientRect());
-		console.log(clawHinge.current.getBoundingClientRect());
+		let emailX =
+			email.current.getBoundingClientRect().x +
+			email.current.getBoundingClientRect().width / 2;
+		let emailY = email.current.getBoundingClientRect().y;
 
-		if (Math.abs(prizeX - hingeX) <= 20 && Math.abs(prizeY - hingeY) <= 22) {
-			return true;
+		let githubX =
+			github.current.getBoundingClientRect().x +
+			github.current.getBoundingClientRect().width / 2;
+		let githubY = github.current.getBoundingClientRect().y;
+
+		let linkedinX =
+			linkedin.current.getBoundingClientRect().x +
+			linkedin.current.getBoundingClientRect().width / 2;
+		let linkedinY = linkedin.current.getBoundingClientRect().y;
+
+		if (Math.abs(emailX - hingeX) <= 10 && Math.abs(emailY - hingeY) <= 22) {
+			return "email";
+		} else if (
+			Math.abs(githubX - hingeX) <= 10 &&
+			Math.abs(githubY - hingeY) <= 22
+		) {
+			return "github";
+		} else if (
+			Math.abs(linkedinX - hingeX) <= 10 &&
+			Math.abs(linkedinY - hingeY) <= 30
+		) {
+			return "linkedin";
 		} else {
 			return false;
 		}
-
-		// works for checking top offset
-		//console.log(prize1.current.offsetTop);
-		//console.log(clawHinge.current.offsetTop);
 	};
 
 	return (
@@ -187,9 +232,24 @@ const ClawGame = () => {
 			<div id="prizes">
 				<img
 					className="prize"
-					ref={prize1}
-					src={BearImg}
-					alt="teddy bear"
+					id="email"
+					ref={email}
+					src={EmailBall}
+					alt="prize- email"
+				></img>
+				<img
+					className="prize"
+					id="github"
+					ref={github}
+					src={GithubBall}
+					alt="prize- github"
+				></img>
+				<img
+					className="prize"
+					id="linkedin"
+					ref={linkedin}
+					src={LinkedinBall}
+					alt="prize- linkedin"
 				></img>
 			</div>
 
