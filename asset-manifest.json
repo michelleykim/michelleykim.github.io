@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.850f1d98.css",
-    "main.js": "/static/js/main.860d4ff9.js",
+    "main.js": "/static/js/main.c107c948.js",
     "static/js/787.7de581aa.chunk.js": "/static/js/787.7de581aa.chunk.js",
     "static/media/backgroundUniverseDark.svg": "/static/media/backgroundUniverseDark.4d9d08d2f3d3a530ee2f.svg",
     "static/media/tassel.svg": "/static/media/tassel.74f5ecdecb7e7682682401165058f54f.svg",
@@ -13,6 +13,7 @@
     "static/media/spellrise.png": "/static/media/spellrise.bd3cef8eba9444a87e81.png",
     "static/media/happyhour.png": "/static/media/happyhour.22326d7590ee5fcf1e5f.png",
     "static/media/sketchconnect.png": "/static/media/sketchconnect.19e65e401a50156b7e8c.png",
+    "static/media/michelle_kim_resume.pdf": "/static/media/michelle_kim_resume.e2e5c0228ef4c264abae.pdf",
     "static/media/claw machine.svg": "/static/media/claw machine.7d0b8cb4eff245152f250ca897a47c2b.svg",
     "static/media/buttonR.svg": "/static/media/buttonR.e6241e926a6b6713d4057ef30ac3dd29.svg",
     "static/media/buttonL.svg": "/static/media/buttonL.8468fc01d31d4bdf40876bdf96dd52e1.svg",
@@ -27,11 +28,11 @@
     "static/media/body.svg": "/static/media/body.f958586c6f3b4ac159613783cfe7953b.svg",
     "static/media/hinge.svg": "/static/media/hinge.e68234db2753e10b4031d722f89c9b8c.svg",
     "main.850f1d98.css.map": "/static/css/main.850f1d98.css.map",
-    "main.860d4ff9.js.map": "/static/js/main.860d4ff9.js.map",
+    "main.c107c948.js.map": "/static/js/main.c107c948.js.map",
     "787.7de581aa.chunk.js.map": "/static/js/787.7de581aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.850f1d98.css",
-    "static/js/main.860d4ff9.js"
+    "static/js/main.c107c948.js"
   ]
 }
