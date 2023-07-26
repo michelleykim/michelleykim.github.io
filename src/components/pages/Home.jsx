@@ -4,6 +4,7 @@ import "./Home.css";
 import ClawGame from "../ClawGame";
 import SlideDrawer from "../SlideDrawer";
 import Tassel from "../../assets/tassel.svg";
+import resume from "../../assets/michelle_kim_resume.pdf"
 import { useDispatch, useSelector } from "react-redux";
 import { setSidePannel, setNightmode } from "../../redux/actions";
 
@@ -82,14 +83,13 @@ const Home = () => {
 
 				{showResume && (
 					<object
-						data="http://africau.edu/images/default/sample.pdf"
+						data={resume}
 						type="application/pdf"
 						id="resume"
 					>
 						<p>
-							Alternative text - include a link{" "}
-							<a href="http://africau.edu/images/default/sample.pdf">
-								to the PDF!
+							Link to pdf: 
+							<a href="https://drive.google.com/file/d/1z5ZIh2gvTB03WdqrZOUqlMGNI0BWVRiD/view?usp=sharing">
 							</a>
 						</p>
 					</object>
