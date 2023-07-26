@@ -1,0 +1,110 @@
+.Game {
+  /* Spacing */
+  margin: 5% 10vw;
+  position: relative;
+  height: 90%
+}
+
+/* ----- CLAW ----- */
+#ClawMachine {
+  height: 100%;
+}
+
+#ClawBody {
+  position: absolute;
+  top: 13%;
+  left: 43%;
+  height: 4%;
+  z-index: 1;
+}
+
+#ClawHinge {
+  position: absolute;
+  top: 18.5%;
+  left: 47.5%;
+  height: 3.7%;
+  z-index: 1;
+}
+
+#ClawRod {
+  position: absolute;
+  top: 16.3%;
+  left: 48.6%;
+  height: 2.5%;
+  width: 4%;
+  z-index: 0;
+}
+
+#ClawL {
+  position: absolute;
+  top: 21%;
+  left: 44%;
+  height: 7%;
+}
+
+#ClawR {
+  position: absolute;
+  top: 21%;
+  left: 51.5%;
+  height: 7%;
+}
+
+/* ----- PRIZES ----- */
+#prizes {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  height: 26%;
+  width: 80%;
+}
+
+.prize {
+  position: absolute;
+  top: 66%;
+  width: 18%;
+  display: inline;
+}
+
+#email {
+  left: 41%;
+  transform: rotate(24deg);
+}
+
+#github {
+  left: 29%;
+  transform: rotate(139deg);
+}
+
+#linkedin {
+  left: 75%;
+  transform: rotate(93deg);
+}
+
+/* ----- BUTTONS ----- */
+#ButtonL {
+  position: absolute;
+  top: 53.5%;
+  left: 20%;
+  height: 6%;
+}
+
+#ButtonR {
+  position: absolute;
+  top: 53.5%;
+  left: 40%;
+  height: 6%;
+}
+
+#ButtonP {
+  position: absolute;
+  top: 53.5%;
+  left: 65%;
+  height: 6%;
+}
+
+#copyrightText {
+  text-align: right;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-top: 2px;
+}
